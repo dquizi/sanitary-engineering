@@ -1,0 +1,85 @@
+.header
+	position: relative
+	&-grey
+		position: absolute
+		right: 0
+		height: 100%
+		width: 38%
+		background-color: #f1f1f1
+		z-index: -1
+	&-block
+		display: flex
+		justify-content: space-between
+		&__menu
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__item
+			position: relative
+			text-align: center
+			padding: 27px
+			margin-left: 1px
+			margin-right: 1px
+			&:first-child
+				padding-left: 7px
+			&:last-child
+				padding-right: 0
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				width: 1px
+				height: 15px
+				background: url('../img/header/border.svg') no-repeat center
+			&:first-child
+				&:before
+					display: none
+		&__call
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			padding-left: 3px
+			background-color: #f1f1f1
+		&__logo
+			display: flex
+			padding: 7px
+		&__button
+			font-size: 14px
+			padding: 7px 15px
+			margin-top: 3px
+			margin-right: -7px
+			margin-left: 43px
+		&__phone
+			margin-left: 6px
+@media (max-width: 1100px)
+	.header
+		&-block
+			&__item
+				padding-right: 10px
+				padding-left: 10px
+@media (max-width: 900px)
+	.header
+		&-block
+			&__menu
+				display: none
+			&__button
+				margin-top: 0
+@media (max-width: 480px)
+	.header
+		&-grey
+			background-color: transparent
+		&-block
+			&__call
+				background-color: transparent
+			&__button
+				margin-left: 5px
+			&__phone
+				font-size: 14px
+@media (max-width: 400px)
+	.header
+		&-block
+			&__call
+				img
+					display: none
+			&__phone
+				display: none

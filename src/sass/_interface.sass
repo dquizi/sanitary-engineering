@@ -1,0 +1,36 @@
+*
+  box-sizing: border-box
+  margin: 0
+
+body
+	+reg
+img
+  max-width: 100%
+
+a
+	text-decoration: none
+	color: #000
+	&:hover
+		cursor: pointer
+
+._bold
+	font-weight: 700
+
+.container
+	width: 1170px
+	margin: auto
+@media (max-width: 1200px)
+	.container
+		width: 90%
+@media (max-width: 320px)
+  .container
+    max-width: 280px
+.phone
+	font-size: 18px
+.button
+	background-color: $main-color
+	+bold
+	border: none
+	outline: none
+	&:hover
+		cursor: pointer

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -339,4 +340,218 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'ProximaNova-Regular';
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+._bold {
+  font-weight: 700;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+}
+
+.phone {
+  font-size: 18px;
+}
+
+.button {
+  background-color: #ffc800;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/* Подключение блоков */
+.header {
+  position: relative;
+}
+
+.header-grey {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 38%;
+  background-color: #f1f1f1;
+  z-index: -1;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-block__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-block__item {
+  position: relative;
+  text-align: center;
+  padding: 27px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.header-block__item:first-child {
+  padding-left: 7px;
+}
+
+.header-block__item:last-child {
+  padding-right: 0;
+}
+
+.header-block__item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 15px;
+  background: url("../img/header/border.svg") no-repeat center;
+}
+
+.header-block__item:first-child:before {
+  display: none;
+}
+
+.header-block__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 3px;
+  background-color: #f1f1f1;
+}
+
+.header-block__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px;
+}
+
+.header-block__button {
+  font-size: 14px;
+  padding: 7px 15px;
+  margin-top: 3px;
+  margin-right: -7px;
+  margin-left: 43px;
+}
+
+.header-block__phone {
+  margin-left: 6px;
+}
+
+@media (max-width: 1100px) {
+  .header-block__item {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-block__menu {
+    display: none;
+  }
+  .header-block__button {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-grey {
+    background-color: transparent;
+  }
+  .header-block__call {
+    background-color: transparent;
+  }
+  .header-block__button {
+    margin-left: 5px;
+  }
+  .header-block__phone {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-block__call img {
+    display: none;
+  }
+  .header-block__phone {
+    display: none;
+  }
 }
