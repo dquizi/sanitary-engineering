@@ -1,0 +1,85 @@
+.slider
+	&-block
+		position: relative
+		height: 742px
+		background-color: #000
+		&__item
+			height: 742px
+			background-color: #000
+	&-text
+		position: absolute
+		top: 279px
+		left: 180px
+		z-index: 2
+		// width: auto
+		&__title
+			color: $main-color
+			text-transform: uppercase
+			font-size: 35px
+			line-height: 52px
+			font-weight: 700
+		&__title-2
+			color: #fff
+			font-size: 35px
+			line-height: 55px
+		&__subtitle
+			line-height: 28px
+			font-size: 20px
+			color: #fffffe
+			opacity: 0.42
+			margin-top: 17px
+			max-width: 1170px
+		&__button
+			text-transform: uppercase
+			background: $main-color
+			padding: 12px 39px
+			margin-top: 49px
+			margin-left: 3px
+			font-size: 18px
+.item-1
+	background: url('../img/slider/boiler.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+.item-2
+	background: url('../img/slider/buderus.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+.item-3
+	background: url('../img/slider/electro.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+.item-4
+	background: url('../img/slider/repair.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+.owl-dot
+	width: 20px
+	height: 20px
+	margin-right: 11px
+	background: #fff
+	overflow: hidden
+	&.active
+		background: $main-color
+		color: $main-color
+	&s
+		position: absolute
+		left: 50%
+		margin-left: -48px
+		bottom: 44px
+		display: flex
+		justify-content: center
+		color: #fff
+@media (max-width: 1200px)
+	.slider-text
+		left: 60px
+@media (max-width: 480px)
+	.slider
+		&-text
+			&__title, &__title-2
+				max-width: 300px
+				font-size: 24px
+				line-height: 30px
+			&__subtitle
+				font-size: 16px
+				line-height: 16px
+				max-width: 250px

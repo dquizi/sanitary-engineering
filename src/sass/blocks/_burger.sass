@@ -1,0 +1,116 @@
+// .header
+// 	&-block
+// 		&__menu
+// 			display: flex
+// 			justify-content: space-between
+// 			align-items: center
+// 			a
+// 				color: #000
+// 				transition: 0.5s
+// 				&:hover
+// 					transition: 0.2s
+// 					color: $main-color
+// 				&:hover
+// 					&:after
+// 						width: 100%
+// 				&:after
+// 					content: ''
+// 					display: block
+// 					height: 2px
+// 					width: 0%
+// 					background-color: $main-color
+// 					transition: width 0.3s ease-in-out
+
+// .menu-btn
+// 	display: block
+// 	width: 50px
+// 	height: 50px
+// 	background-color: #fff
+// 	border-radius: 50%
+// 	position: relative
+// .menu-btn span, .menu-btn span:before, .menu-btn span:after
+// 	position: absolute
+// 	top: 50%
+// 	margin-top: -1px
+// 	left: 50%
+// 	margin-left: -10px
+// 	width: 20px
+// 	height: 2px
+// 	background-color: #222
+// 	transition: 0.2s
+// .menu-btn span:before, .menu-btn span:after
+// 	content: ''
+// 	display: block
+// 	transition: 0.5s
+// .menu-btn span:before
+// 	transform: translateY(-5px)
+// .menu-btn_active span
+// 	height: 0
+// .menu-btn span:after
+// 	transform: translateY(5px)
+// .menu-btn_active span:before
+// 	transform: rotate(-45deg)
+// .menu-btn_active span:after
+// 	transform: rotate(45deg)
+
+.header-block__menu
+	height: 100vh
+  list-style: none
+  overflow: hidden
+  background-color: #fff
+
+.header-block__menu li a
+	display: block
+	padding: 20px 20px
+	list-style: none
+	border-right: 1px solid #f4f4f4
+	text-decoration: none
+
+.header-block__menu li a:hover,
+.header-block__menu .menu-btn:hover
+  background-color: #f4f4f4
+
+/* menu */
+
+.header-block__menu
+  clear: both
+  max-height: 0
+  transition: max-height .2s ease-out
+
+/* menu btn */
+
+.header-block__menu .menu-btn
+  display: none
+
+.header-block__menu .menu-btn:checked ~ .menu
+  max-height: 240px
+
+.header-block__menu .menu-btn:checked ~ .menu-icon .navicon
+  background: transparent
+
+.header-block__menu .menu-btn:checked ~ .menu-icon .navicon:before
+  transform: rotate(-45deg)
+
+.header-block__menu .menu-btn:checked ~ .menu-icon .navicon:after
+  transform: rotate(45deg)
+
+.header-block__menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header-block__menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after
+  top: 0
+
+/* 48em = 768px */
+
+@media (min-width: 48em)
+  .header-block__menu li
+    float: left
+
+  .header-block__menu li a
+    padding: 20px 30px
+
+  .header-block__menu .menu
+    clear: none
+    float: right
+    max-height: none
+
+  .header-block__menu
+    display: none
