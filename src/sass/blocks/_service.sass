@@ -1,9 +1,10 @@
 .service
 	&-wrap
 		position: relative
-		background-color: #f1f1f1
+		background-color: $secondary
 		margin-top: 133px
 		padding-top: 104px
+		padding-bottom: 96px
 		&__button
 			position: absolute
 			margin-top: -131px
@@ -41,6 +42,12 @@
 			padding: 8px 0
 			font-size: 15px
 			text-transform: uppercase
-
-
+@media (max-width: 544px)
+	.service
+		&-wrap
+			&__button
+				left: 50%
+				margin-left: -122px
+		&-block
+			margin-right: 0
 

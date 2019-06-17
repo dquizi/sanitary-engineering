@@ -21,11 +21,11 @@
 }
 
 @font-face {
-	font-family: 'ProximaNova-Semibold';
-	src: url('../fonts/ProximaNova-Semibold.eot');
-	src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova-Semibold.woff') format('woff'),
-		url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+	font-family: 'ProximaNova-Black';
+	src: url('../fonts/ProximaNova-Black.eot');
+	src: url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Black.woff') format('woff'),
+		url('../fonts/ProximaNova-Black.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -43,6 +43,6 @@
 	font-weight: 700
 }
 
-// @mixin semi {
-// 	font-family: 'ProximaNova-Semibold'
-// }
+@mixin black {
+	font-family: 'ProximaNova-Black'
+}
