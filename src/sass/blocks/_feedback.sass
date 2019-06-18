@@ -1,0 +1,77 @@
+.feedback
+	position: relative
+	margin-top: 141px
+	margin-bottom: 147px
+	background: #000
+	&-button
+		position: absolute
+		margin-top: -25px
+		margin-left: 150px
+		padding: 15px 65px
+		font-size: 28px
+		line-height: 28px
+		text-transform: uppercase
+	&-slider
+		display: flex
+		justify-content: space-between
+		margin-top: 110px
+		&s
+			margin-left: 4px
+			height: 584px
+	&-block
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		&__text
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-left: 2px
+		&__image
+			max-width: 116px
+			max-height: 118px
+			text-align: center
+		&__title
+			color: $main-color
+			margin-top: 11px
+			font-size: 20px
+			line-height: 28px
+		&__description
+			margin-top: 15px
+			margin-bottom: 28px
+			color: #fff
+			font-size: 20px
+			line-height: 28px
+			max-width: 468px
+			max-height: 80px
+			text-align: center
+			overflow: hidden
+		&__icon
+			max-width: 20px
+			height: 20px
+			&s
+				display: flex
+	&-icon
+		&__number
+			color: #fff
+			font-size: 15px
+			line-height: 28px
+			margin-right: 29px
+			margin-left: 7px
+			&:last-child
+				margin-right: 0
+@media (max-width: 992px)
+	.feedback
+		&-slider
+			flex-direction: column
+			&s
+				height: 100%
+		&-block
+			margin-bottom: 100px
+@media (max-width: 544px)
+	.feedback
+		&-button
+			left: 50%
+			margin-left: -122px

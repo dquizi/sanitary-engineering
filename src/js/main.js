@@ -13,7 +13,6 @@ $(document).ready(function () {
 		dots: true,
 		dotsEach: true,
 		dotsData: true,
-		// dotsContainer: true,
 		autoplay: false,
 		autoplayTimeout: 5000,
 		autoplayHoverPause: false,

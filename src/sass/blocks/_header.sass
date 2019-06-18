@@ -10,6 +10,7 @@
 	&-block
 		display: flex
 		justify-content: space-between
+		align-items: center
 		&__menu
 			display: flex
 			justify-content: space-between
@@ -40,16 +41,6 @@
 				padding-left: 7px
 			&:last-child
 				padding-right: 0
-			&:before
-				content: ''
-				position: absolute
-				left: 0
-				width: 1px
-				height: 15px
-				background: url('../img/header/border.svg') no-repeat center
-			&:first-child
-				&:before
-					display: none
 		&__call
 			display: flex
 			justify-content: flex-end
@@ -58,7 +49,8 @@
 			background-color: #f1f1f1
 		&__logo
 			display: flex
-			padding: 7px
+			flex-shrink: 0
+			padding: 8px
 		&__button
 			font-size: 14px
 			padding: 7px 15px
@@ -80,7 +72,10 @@
 				display: none
 			&__button
 				margin-top: 0
-@media (max-width: 480px)
+				margin-left: 10px
+		&-grey
+			width: 360px
+@media (max-width: 550px)
 	.header
 		&-grey
 			background-color: transparent
@@ -91,7 +86,7 @@
 				margin-left: 5px
 			&__phone
 				font-size: 14px
-@media (max-width: 400px)
+@media (max-width: 450px)
 	.header
 		&-block
 			&__call
