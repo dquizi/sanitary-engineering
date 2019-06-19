@@ -72,14 +72,20 @@
 @media (max-width: 1200px)
 	.slider-text
 		left: 60px
+@media (max-width: 768px)
+	.slider
+		&-text
+			&__subtitle
+				max-width: 900px
 @media (max-width: 480px)
 	.slider
 		&-text
 			&__title, &__title-2
-				max-width: 300px
 				font-size: 24px
 				line-height: 30px
 			&__subtitle
 				font-size: 16px
 				line-height: 16px
 				max-width: 250px
+	.owl-dots
+		margin-left: -62px

@@ -1,0 +1,108 @@
+.news
+	position: relative
+	background: $secondary
+	&-title
+		margin-top: -29px
+		padding: 15px 55px
+	&-main
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	&-block
+		display: flex
+		justify-content: space-around
+		align-items: center
+		margin-top: 87px
+		margin-bottom: 66px
+		margin-left: 19px
+		&__item
+			margin-left: 10px
+			margin-right: 10px
+			flex-shrink: 0
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+		&__image
+			max-width: 377px
+			max-height: 279px
+		&__sub
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 23px
+			margin-bottom: 12px
+			padding-right: 48px
+			&title
+				margin-left: -1px
+				font-size: 20px
+				line-height: 28px
+				text-transform: uppercase
+				+ls
+				&:hover
+					text-decoration: underline
+					cursor: pointer
+		&__marker
+			+bold
+			margin-right: 1px
+			padding: 3px
+			background: $main-color
+			&number
+				line-height: 28px
+		&__description
+			max-width: 323px
+			margin-left: -2px
+			overflow: hidden
+			font-size: 18px
+			+bold
+			line-height: 28px
+			opacity: 0.83
+			&:hover
+				text-decoration: underline
+				cursor: pointer
+	&__button
+		margin-left: 13px
+		margin-bottom: 72px
+		padding: 15px 42px
+		background: $main-color
+		font-size: 20px
+		line-height: 28px
+		text-transform: uppercase
+@media (max-width: 1200px)
+	.news
+		&-block
+			flex-wrap: wrap
+			margin-left: 0
+			margin-bottom: 0
+			&__item
+				margin-bottom: 50px
+			&__description
+				margin-left: 2px
+				max-width: 377px
+@media (max-width: 900px)
+	.news
+		&-block
+			&__item
+				margin-left: 0
+			&__sub
+				flex-direction: column
+				align-items: flex-start
+				padding-right: 0
+				&title
+					margin-bottom: 5px
+				&number
+					margin-right: 0
+		&__button
+			margin-left: 0
+@media (max-width: 900px)
+	.news
+		&-block
+			&__item
+				flex-shrink: 1
+@media (max-width: 400px)
+	.news
+		&__button
+			padding-left: 0
+			padding-right: 0
+			width: 100%

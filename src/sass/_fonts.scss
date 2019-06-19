@@ -46,3 +46,7 @@
 @mixin black {
 	font-family: 'ProximaNova-Black'
 }
+
+@mixin ls {
+	letter-spacing: 0.5px
+}

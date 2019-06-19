@@ -19,6 +19,20 @@ a
 .container
 	width: 1170px
 	margin: auto
+.title
+	position: absolute
+	margin-top: -26px
+	margin-left: 150px
+	padding: 19px 55px
+	+bold
+	background: $main-color
+	font-size: 28px
+	line-height: 28px
+	text-transform: uppercase
+@media (max-width: 544px)
+	.title
+		left: 50%
+		margin-left: -122px
 @media (max-width: 1200px)
 	.container
 		width: 90%
