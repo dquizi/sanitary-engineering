@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ремонт сантехники</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b5560a5d-656f-42a4-b8af-98e049e0d15b&lang=ru_RU"></script>
 </head>
 <body>
 	<nav class="header">
@@ -36,29 +37,58 @@
 	</nav>
 
 	<main>
-		<section class="slider">
-			<div class="slider-text">
-				<div class="slider-text__title">Наша бригада по монтированию отопления и сантехники</div>
-				<div class="slider-text__title-2">вызов по Москве и Московской области</div>
-				<div class="slider-text__subtitle">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.</div>
-				<button class="button slider-text__button">Подробнее</button>
-			</div>
-			<div class="slider-block owl-carousel">
-				<!-- <div class="slider-block__item"><img src="img/slider/boiler.jpg" alt="boiler"></div>
-				<div class="slider-block__item"><img src="img/slider/buderus.jpg" alt="buderus"></div>
-				<div class="slider-block__item"><img src="img/slider/electro.jpg" alt="electro"></div>
-				<div class="slider-block__item"><img src="img/slider/repair.jpg" alt="repair"></div> -->
-				<div class="slider-block__item item-1">
+		<section class="slider-block owl-carousel">
+			<div class="slider-block__item item-1">
+				<div class="slider-text">
+					<div class="container">
+						<div class="slider-text__title">Наша бригада по монтированию отопления и сантехники</div>
+						<div class="slider-text__title-2">вызов по Москве и Московской области</div>
+						<div class="slider-text__subtitle">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие
+							сроки.Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.</div>
+						<button class="button slider-text__button">Подробнее</button>
+					</div>
 				</div>
-				<div class="slider-block__item item-2"></div>
-				<div class="slider-block__item item-3"></div>
-				<div class="slider-block__item item-4"></div>
 			</div>
+			<div class="slider-block__item item-2">
+				<div class="slider-text">
+					<div class="container">
+						<div class="slider-text__title">Наша бригада по монтированию отопления и сантехники</div>
+						<div class="slider-text__title-2">вызов по Москве и Московской области</div>
+						<div class="slider-text__subtitle">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие
+							сроки.Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.</div>
+						<button class="button slider-text__button">Подробнее</button>
+					</div>
+				</div>
+			</div>
+			<div class="slider-block__item item-3">
+				<div class="slider-text">
+					<div class="container">
+						<div class="slider-text__title">Наша бригада по монтированию отопления и сантехники</div>
+						<div class="slider-text__title-2">вызов по Москве и Московской области</div>
+						<div class="slider-text__subtitle">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие
+							сроки.Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.</div>
+						<button class="button slider-text__button">Подробнее</button>
+					</div>
+				</div>
+			</div>
+			<div class="slider-block__item item-4">
+				<div class="slider-text">
+					<div class="container">
+						<div class="slider-text__title">Наша бригада по монтированию отопления и сантехники</div>
+						<div class="slider-text__title-2">вызов по Москве и Московской области</div>
+						<div class="slider-text__subtitle">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие
+							сроки.Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.</div>
+						<button class="button slider-text__button">Подробнее</button>
+					</div>
+				</div>
+			</div>
+
+
 		</section>
 
 		<section class="service">
 			<div class="service-wrap">
-				<button class="button service-wrap__button" id="service">услуги</button>
+				<h2 class="title service-wrap__title" id="service">услуги</h2>
 				<div class="container">
 					<div class="service-block">
 						<div class="service-block__item">
@@ -368,11 +398,51 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.news -->
+		<section class="geo">
+			<div class="geo-form">
+				<h3 class="geo-form__title">оставьте <span class="main-color">заявку</span></h3>
+				<input type="name" class="geo-form__name">
+				<input type="phone" class="geo-form__phone">
+				<button class="button geo-form__button">заказать звонок</button>
+			</div>
+			<div class="geo-map">
+				<script src="js/map.js"></script>
 
+			</div>
+		</section>
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-block">
+				<div class="footer-block__address">
+					<img src="img/footer/marker.png" alt="address"><span class="footer-address__text">г. Москва, ул. Советская 48 корп. 3</span>
+				</div>
+				<div class="footer-block__social">
+					<a href="#"><img src="img/footer/odnoklassniki.png" alt="instagram"></a>
+					<a href="#"><img src="img/footer/vk.png" alt="vk"></a>
+					<a href="#"><img src="img/footer/odnoklassniki.png" alt="odnoklassniki"></a>
+				</div>
+				<div class="footer-block__contacts">
+					<div class="footer-contacts__mail">
+						<img src="img/footer/mail.png" alt="mail"><span class="footer-contacts__text">infosanteh@gmail.com</span>
+					</div>
+					<div class="footer-contacts__phone">
+						<img src="img/footer/phone.png" alt="phone">
+						<a href="tel:+78633422221"><span class="footer-phone__text phone">+7 (863) <span class="_bold">342-22-21</span></span></a>
+					</div>
+				</div>
+				<!-- /.footer-block__contacts -->
+			</div>
+			<!-- /.footer-block -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+
 </body>
 </html>

@@ -7,11 +7,7 @@
 			height: 742px
 			background-color: #000
 	&-text
-		position: absolute
-		top: 279px
-		left: 180px
-		z-index: 2
-		// width: auto
+		padding-top: 279px
 		&__title
 			color: $main-color
 			text-transform: uppercase
@@ -69,23 +65,43 @@
 		display: flex
 		justify-content: center
 		color: #fff
-@media (max-width: 1200px)
-	.slider-text
-		left: 60px
 @media (max-width: 768px)
 	.slider
 		&-text
+			&__title, &__title-2
+				font-size: 30px
+				line-height: 40px
 			&__subtitle
 				max-width: 900px
+@media (max-width: 640px)
+	.slider
+		&-text
+			position: relative
+			&__title, &__title-2
+				font-size: 24px
+				line-height: 30px
+			&__button
+				position: absolute
+				left: 50%
+				margin-top: 20px
+				margin-left: -92px
 @media (max-width: 480px)
 	.slider
 		&-text
 			&__title, &__title-2
-				font-size: 24px
-				line-height: 30px
+				font-size: 22px
+				line-height: 28px
 			&__subtitle
-				font-size: 16px
-				line-height: 16px
-				max-width: 250px
-	.owl-dots
-		margin-left: -62px
+				font-size: 20px
+				line-height: 20px
+	.owl-dot
+		&:last-child
+			margin-right: 0
+		&s
+			margin-left: -56px
+@media (max-width: 400px)
+	.slider
+		&-text
+			&__subtitle
+				font-size: 18px
+				line-height: 18px

@@ -1,0 +1,91 @@
+.footer
+	display: flex
+	height: 134px
+	background: #000
+	*
+		color: #fefefe
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__address
+			display: flex
+			justify-content: center
+			align-items: center
+		&__social
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-left: 12px
+			padding-top: 3px
+			a
+				background: transparent
+			img
+				margin: 0 5px
+		&__contacts
+			display: flex
+			justify-content: space-between
+			align-items: center
+	&-address
+		&__text
+			margin-left: 13px
+			font-size: 20px
+			line-height: 28px
+	&-contacts
+		&__mail
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-right: 27px
+		&__text
+			margin-left: 10px
+			font-size: 18px
+		&__phone
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-left: 22px
+			border-left: 1px solid #fff
+	&-phone
+		&__text
+			margin-left: 6px
+@media (max-width: 1020px)
+	.footer
+		&-block
+			flex-wrap: wrap
+			&__social
+				margin-bottom: -20px
+@media (max-width: 640px)
+	.footer
+		&-block
+			flex-direction: column
+			&__social
+				align-self: center
+				margin-bottom: 0
+				order: 3
+			&__contacts
+				padding: 10px 0
+@media (max-width: 480px)
+	.footer
+		&-block
+			align-items: flex-start
+			&__contacts
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+			&__address
+				margin-bottom: -6px
+		&-contacts
+			&__phone
+				border: none
+				padding-left: 0
+			&__mail
+				margin-bottom: 6px
+@media (max-width: 400px)
+	.footer
+		*
+			font-size: 16px
+		&-address
+			&__text
+				margin-right: -10px
+				line-height: 16px

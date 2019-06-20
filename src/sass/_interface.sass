@@ -16,6 +16,8 @@ a
 	color: #fff
 .uppercase
 	text-transform: uppercase
+.main-color
+	color: $main-color
 .container
 	width: 1170px
 	margin: auto
@@ -23,12 +25,15 @@ a
 	position: absolute
 	margin-top: -26px
 	margin-left: 150px
-	padding: 19px 55px
+	padding: 15px 67px
+	letter-spacing: 0.4px
 	+bold
 	background: $main-color
 	font-size: 28px
 	line-height: 28px
 	text-transform: uppercase
+input
+	display: block
 @media (max-width: 544px)
 	.title
 		left: 50%
@@ -46,7 +51,5 @@ a
 	outline: none
 	border: none
 	+bold
-	border: none
-	outline: none
 	&:hover
 		cursor: pointer
