@@ -2,14 +2,65 @@
 	position: relative
 	&-form
 		position: absolute
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 		margin-top: 140px
-		// margin-left: 378px
-		// width: 397px
+		margin-left: 9px
+		padding: 45px 46px 58px
 		height: 385px
-		box-shadow: 5px
+		box-shadow: 3px -3px 10px 0px grey
+		background: #fff
+		z-index: 1
+		&__title
+			margin-left: -3px
+			margin-bottom: -26px
+			letter-spacing: 0.9px
+			font-size: 20px
+			line-height: 28px
+			text-transform: uppercase
+			text-align: center
 		&__name
-		&__form
+			line-height: 25px
+			margin-bottom: -29px
+			&::placeholder
+				font-size: 18px
+				line-height: 28px
+				font-style: italic
+		&__phone
+			line-height: 25px
+			&::placeholder
+				font-size: 18px
+				line-height: 28px
+				font-style: italic
 		&__button
+			font-size: 20px
+			line-height: 28px
+			text-transform: uppercase
+			letter-spacing: 0.5px
 	&-map
 		width: 100%
 		height: 666px
+input
+	border: none
+	border-bottom: 1px solid #000
+@media (min-width: 480px)
+	.geo
+		&-form
+			width: 397px
+			&__button
+				padding: 15px 53px
+@media (max-width: 480px)
+	.geo
+		&-form
+			max-width: 397px
+			padding: 30px
+			&__button
+				padding: 15px 40px
+@media (max-width: 400px)
+	.geo-form
+		&__title, &__button
+			font-size: 18px
+@media (max-width: 370px)
+	.geo-form__button
+		padding: 10px 15px

@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ремонт сантехники</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=b5560a5d-656f-42a4-b8af-98e049e0d15b&lang=ru_RU"></script>
 </head>
 <body>
 	<nav class="header">
@@ -15,20 +14,34 @@
 				<div class="header-block__logo">
 					<img src="img/header/logo.png" alt="Логотип">
 				</div>
-				<ul class="header-block__menu">
-					<li><a href="#service"><span class="header-block__text">Услуги</span></a></li>
-					<li><a href="#service"><span class="header-block__text">Цены</span></a></li>
-					<li><a href="#feedback"><span class="header-block__text">Отзывы</span></a></li>
-					<li><a href="#news"><span class="header-block__text">Новости</span></a></li>
-					<li><a href="#contacts"><span class="header-block__text">Контакты</span></a></li>
-				</ul>
-					<a href="#" class="menu-btn">
-						<span></span>
-					</a>
-				<div class="header-block__call">
-					<img src="img/header/phone.png" alt="Телефон">
-					<a href="tel:+78633422221"><span class="header-block__phone phone">+7 (863) <span class="_bold">342-22-21</span></span></a>
-					<button class="button header-block__button">Заказать звонок</button>
+					<div class="header-inner">
+						<a href="#" class="menu-btn"><span></span>
+							<div class="menu-btn_active">
+								<ul class="menu-btn__menu">
+									<li class="menu-btn__item"><a href="#service"><span class="header-block__text">Услуги</span></a></li>
+									<li class="menu-btn__item"><a href="#service"><span class="header-block__text">Цены</span></a></li>
+									<li class="menu-btn__item"><a href="#feedback"><span class="header-block__text">Отзывы</span></a></li>
+									<li class="menu-btn__item"><a href="#news"><span class="header-block__text">Новости</span></a></li>
+									<li class="menu-btn__item"><a href="#contacts"><span class="header-block__text">Контакты</span></a></li>
+								</ul>
+							</div>
+						</a>
+						<!-- <input class="menu-btn" type="checkbox" id="menu-btn" /> -->
+   			    <!-- <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> -->
+						<ul class="header-block__menu">
+							<li class="header-block__item"><a href="#service"><span class="header-block__text">Услуги</span></a></li>
+							<li class="header-block__item"><a href="#service"><span class="header-block__text">Цены</span></a></li>
+							<li class="header-block__item"><a href="#feedback"><span class="header-block__text">Отзывы</span></a></li>
+							<li class="header-block__item"><a href="#news"><span class="header-block__text">Новости</span></a></li>
+							<li class="header-block__item"><a href="#contacts"><span class="header-block__text">Контакты</span></a></li>
+						</ul>
+					</div>
+					<div class="header-block__call">
+						<img src="img/header/phone.png" alt="Телефон">
+						<a href="tel:+78633422221"><span class="header-block__phone phone">+7 (863) <span
+									class="_bold">342-22-21</span></span></a>
+						<button class="button header-block__button">Заказать звонок</button>
+					</div>
 				</div>
 			</div>
 			<!-- /.header-block -->
@@ -41,7 +54,7 @@
 			<div class="slider-block__item item-1">
 				<div class="slider-text">
 					<div class="container">
-						<div class="slider-text__title">Наша бригада по монтированию отопления и сантехники</div>
+						<h1 class="slider-text__title">Наша бригада по монтированию отопления и сантехники</h1>
 						<div class="slider-text__title-2">вызов по Москве и Московской области</div>
 						<div class="slider-text__subtitle">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие
 							сроки.Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.</div>
@@ -82,8 +95,6 @@
 					</div>
 				</div>
 			</div>
-
-
 		</section>
 
 		<section class="service">
@@ -97,12 +108,26 @@
 							<div class="service-block__text">
 								<div class="service-block__description">Монтаж систем отопления</div>
 							</div>
+							<div class="service-block__price">
+								<img src="img/service/service-1.jpg" alt="service-1">
+								<button class="button service-block__button-price">от 500 р.</button>
+								<div class="service-block__text">
+									<div class="service-block__description-price">Здесь будет короткое описание о данной услуге</div>
+								</div>
+							</div>
 						</div>
 						<div class="service-block__item">
 							<img src="img/service/service-2.jpg" alt="service-2">
 							<button class="button service-block__button">Узнать цену</button>
 							<div class="service-block__text">
-								<div class="service-block__description">Здесь будет короткое описание о данной услуге</div>
+								<div class="service-block__description">Монтаж сантехнического оборудования</div>
+							</div>
+							<div class="service-block__price">
+								<img src="img/service/service-2.jpg" alt="service-2">
+								<button class="button service-block__button-price">от 500 р.</button>
+								<div class="service-block__text">
+									<div class="service-block__description-price">Здесь будет короткое описание о данной услуге</div>
+								</div>
 							</div>
 						</div>
 						<div class="service-block__item">
@@ -111,6 +136,13 @@
 							<div class="service-block__text">
 								<div class="service-block__description">Монтаж канализационного оборудования</div>
 							</div>
+							<div class="service-block__price">
+								<img src="img/service/service-3.jpg" alt="service-3">
+								<button class="button service-block__button-price">от 500 р.</button>
+								<div class="service-block__text">
+									<div class="service-block__description-price">Здесь будет короткое описание о данной услуге</div>
+								</div>
+							</div>
 						</div>
 						<div class="service-block__item">
 							<img src="img/service/service-1.jpg" alt="service-4">
@@ -118,12 +150,26 @@
 							<div class="service-block__text">
 								<div class="service-block__description">Монтаж систем отопления</div>
 							</div>
+							<div class="service-block__price">
+								<img src="img/service/service-1.jpg" alt="service-4">
+								<button class="button service-block__button-price">от 500 р.</button>
+								<div class="service-block__text">
+									<div class="service-block__description-price">Здесь будет короткое описание о данной услуге</div>
+								</div>
+							</div>
 						</div>
 						<div class="service-block__item">
-							<img src="img/service/service-2.jpg" alt="service-3">
+							<img src="img/service/service-2.jpg" alt="service-5">
 							<button class="button service-block__button">Узнать цену</button>
 							<div class="service-block__text">
 								<div class="service-block__description">Монтаж сантехнического оборудования</div>
+							</div>
+							<div class="service-block__price">
+								<img src="img/service/service-2.jpg" alt="service-5">
+								<button class="button service-block__button-price">от 500 р.</button>
+								<div class="service-block__text">
+									<div class="service-block__description-price">Здесь будет короткое описание о данной услуге</div>
+								</div>
 							</div>
 						</div>
 						<div class="service-block__item">
@@ -132,10 +178,20 @@
 							<div class="service-block__text">
 								<div class="service-block__description">Монтаж канализационного оборудования</div>
 							</div>
+							<div class="service-block__price">
+								<img src="img/service/service-3.jpg" alt="service-6">
+								<button class="button service-block__button-price">от 500 р.</button>
+								<div class="service-block__text">
+									<div class="service-block__description-price">Здесь будет короткое описание о данной услуге</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<!-- /.service-block -->
 				</div>
+				<!-- /.container -->
 			</div>
+			<!-- /.service-wrap -->
 		</section>
 
 		<section class="why">
@@ -352,7 +408,7 @@
 		</section>
 		<!-- /.feedback -->
 		<section class="news">
-			<h2 class="news-title title">новости</h2>
+			<h2 class="news-title title" id="news">новости</h2>
 			<div class="container">
 				<div class="news-main">
 					<div class="news-block">
@@ -370,7 +426,7 @@
 						<div class="news-block__item">
 							<div class="news-block__image"><img src="img/news/repair-2.jpg" alt="repair-2"></div>
 							<div class="news-block__sub">
-								<h4 class="news-block__subtitle">подчинка слива</h4>
+								<h4 class="news-block__subtitle">починка слива</h4>
 								<span class="news-block__subnumber"><span class="news-block__marker">29</span>11.2017</span>
 							</div>
 							<div class="news-block__description">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals
@@ -399,33 +455,48 @@
 		</section>
 		<!-- /.news -->
 		<section class="geo">
-			<div class="geo-form">
-				<h3 class="geo-form__title">оставьте <span class="main-color">заявку</span></h3>
-				<input type="name" class="geo-form__name">
-				<input type="phone" class="geo-form__phone">
-				<button class="button geo-form__button">заказать звонок</button>
+			<div class="container">
+				<div class="form geo-form" id="geo-form">
+					<h3 class="geo-form__title">оставьте <span class="main-color">заявку</span></h3>
+					<input type="name" name="username" class="geo-form__name" placeholder="Введите Ваше имя">
+					<input type="phone" name="phone" class="geo-form__phone" id="phone" placeholder="Введите Ваш номер телефона">
+					<button class="button geo-form__button">заказать звонок</button>
+				</div>
 			</div>
 			<div class="geo-map">
-				<script src="js/map.js"></script>
-
+				<script></script>
 			</div>
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer class="footer" id="contacts">
 		<div class="container">
 			<div class="footer-block">
 				<div class="footer-block__address">
 					<img src="img/footer/marker.png" alt="address"><span class="footer-address__text">г. Москва, ул. Советская 48 корп. 3</span>
 				</div>
 				<div class="footer-block__social">
-					<a href="#"><img src="img/footer/odnoklassniki.png" alt="instagram"></a>
+					<a href="#"><img src="img/footer/insta.png" alt="instagram"></a>
 					<a href="#"><img src="img/footer/vk.png" alt="vk"></a>
-					<a href="#"><img src="img/footer/odnoklassniki.png" alt="odnoklassniki"></a>
+					<a href="#"><img src="img/footer/dno.png" alt="odnoklassniki"></a>
 				</div>
+				<!-- <div class="footer-block__social">
+					<div class="vk">
+						<a href="#"><img src="img/footer/1/instagram.png" alt="instagram"></a>
+					</div>
+					<div class="vk-2">
+						<a href="#" class="vk-2"><img src="img/footer/1/instagram-2.png" alt="instagram"></a>
+					</div>
+					<a href="#">
+						<img src="img/footer/1/vk.png" alt="vk">
+					</a>
+					<a href="#">
+						<img src="img/footer/1/odnoklassniki.png" alt="odnoklassniki">
+					</a>
+				</div> -->
 				<div class="footer-block__contacts">
 					<div class="footer-contacts__mail">
-						<img src="img/footer/mail.png" alt="mail"><span class="footer-contacts__text">infosanteh@gmail.com</span>
+						<img src="img/footer/mail.png" alt="mail"><a href="#"><span class="footer-contacts__text">infosanteh@gmail.com</span></a>
 					</div>
 					<div class="footer-contacts__phone">
 						<img src="img/footer/phone.png" alt="phone">
@@ -441,8 +512,13 @@
 	<!-- /.footer -->
 
 	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/map.js"></script>
+	<!-- <script src="js/map.js"></script> -->
 
 </body>
 </html>

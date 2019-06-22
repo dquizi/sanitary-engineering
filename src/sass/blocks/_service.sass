@@ -14,20 +14,46 @@
 		justify-content: space-around
 		align-items: center
 		margin-right: -16px
+		&__price
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			display: none
+			transition: 0.2s
 		&__item
 			position: relative
 			margin-bottom: 17px
+			transition: 0.2s
+			&:hover
+				transition: 0.2s
+				.service-block__price
+					display: block
+					transition: 0.2s
 		&__text
 			position: absolute
 			top: 59px
 			left: 50%
-			margin-left: -150px
+			margin-left: -137px
+			transition: 0.2s
+			text-align: center
 		&__description
 			font-size: 20px
 			line-height: 26px
-			width: 300px
+			width: 275px
 			color: #fff
 			text-align: center
+			transition: 1s
+			&-price
+				font-size: 20px
+				line-height: 26px
+				width: 275px
+				color: #000
+				text-align: center
+				transition: 1s
+				max-width: 275px
+				text-align: center
 		&__button
 			position: absolute
 			top: 136px
@@ -37,6 +63,17 @@
 			padding: 8px 0
 			font-size: 15px
 			text-transform: uppercase
+			&-price
+				position: absolute
+				top: 136px
+				left: 50%
+				margin-left: -67px
+				width: 137px
+				padding: 8px 0
+				font-size: 15px
+				text-transform: uppercase
+				color: #fff
+				background: #000
 @media (max-width: 544px)
 	.service
 		&-wrap

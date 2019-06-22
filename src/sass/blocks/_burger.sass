@@ -1,136 +1,114 @@
-ul
-	padding-left: 0
-.header
-	&-block
-		&__menu
-			display: flex
-			justify-content: space-between
-			align-items: center
-			a
-				color: #000
-				transition: 0.5s
-				&:hover
-					transition: 0.2s
-					color: $main-color
-				&:hover
-					&:after
-						width: 100%
-				&:after
-					content: ''
-					display: block
-					height: 2px
-					width: 0%
-					background-color: $main-color
-					transition: width 0.3s ease-in-out
-.menu-btn
-	display: block
-	width: 50px
-	height: 50px
-	background-color: #fff
-	border-radius: 50%
-	position: relative
-.menu-btn span, .menu-btn span:before, .menu-btn span:after
-	position: absolute
-	top: 50%
-	margin-top: -1px
-	left: 50%
-	margin-left: -10px
-	width: 20px
-	height: 2px
-	background-color: #222
-	transition: 0.2s
-.menu-btn span:before, .menu-btn span:after
-	content: ''
-	display: block
-	transition: 0.5s
-.menu-btn span:before
-	transform: translateY(-5px)
-.menu-btn_active span
-	height: 0
-.menu-btn span:after
-	transform: translateY(5px)
-.menu-btn_active span:before
-	transform: rotate(-45deg)
-.menu-btn_active span:after
-	transform: rotate(45deg)
+/* header-inner */
 
-.header-block__menu
+.header-inner
+  background-color: #fff
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1)
+  width: 100%
+  z-index: 3
+
+
+.header-inner ul
+  margin: 0
+  padding: 0
   list-style: none
   overflow: hidden
   background-color: #fff
 
-.header-block__menu li a
-	display: block
-	margin-top: 2px
-	padding: 0 27px
-	list-style: none
-	border-right: 1px solid #f4f4f4
-	text-decoration: none
-.header-block__menu li
-	&:last-child
-		a
-			border-right: none
+
+.header-inner li a
+  display: block
+  padding: 20px 20px
+  border-right: 1px solid #f4f4f4
+  text-decoration: none
+
+
+.header-inner li a:hover,
+.header-inner .menu-btn:hover
+  background-color: #f4f4f4
+
+
+.header-inner .logo
+  display: block
+  float: left
+  font-size: 2em
+  padding: 10px 20px
+  text-decoration: none
 
 /* menu */
 
-.header-block__menu
+.header-inner .header-inner__menu
   clear: both
+  max-height: 0
   transition: max-height .2s ease-out
 
-.header-block__menu menu-btn_active
+/* menu icon */
 
+.header-inner .menu-icon
+  cursor: pointer
+  display: inline-block
+  float: right
+  padding: 28px 20px
+  position: relative
+  user-select: none
+
+.header-inner .menu-icon .navicon
+  background: #333
+  display: block
+  height: 2px
+  position: relative
+  transition: background .2s ease-out
+  width: 18px
+
+.header-inner .menu-icon .navicon:before,
+.header-inner .menu-icon .navicon:after
+  background: #333
+  content: ''
+  display: block
+  height: 100%
+  position: absolute
+  transition: all .2s ease-out
+  width: 100%
+
+.header-inner .menu-icon .navicon:before
+  top: 5px
+
+.header-inner .menu-icon .navicon:after
+  top: -5px
 
 /* menu btn */
 
-.menu-btn
+.header-inner .menu-btn
   display: none
 
-.header-block__menu .menu-btn:checked ~ .menu
+.header-inner .menu-btn:checked ~ .header-inner__menu
   max-height: 240px
 
-.header-block__menu .menu-btn:checked ~ .menu-icon .navicon
+.header-inner .menu-btn:checked ~ .menu-icon .navicon
   background: transparent
 
-.header-block__menu .menu-btn:checked ~ .menu-icon .navicon:before
+.header-inner .menu-btn:checked ~ .menu-icon .navicon:before
   transform: rotate(-45deg)
 
-.header-block__menu .menu-btn:checked ~ .menu-icon .navicon:after
+.header-inner .menu-btn:checked ~ .menu-icon .navicon:after
   transform: rotate(45deg)
 
-.header-block__menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header-block__menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after
+.header-inner .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header-inner .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after
   top: 0
 
 /* 48em = 768px */
 
-@media (max-width: 1200px)
-	.header
-		&-block
-			&__menu li a
-				padding: 0 15px
-		&-grey
-			width: 425px
-@media (max-width: 1000px)
-  .menu-btn
-    display: block
-
-  .header-block__menu li
+@media (min-width: 48em)
+  .header-inner li
     float: left
 
-  .header-block__menu li a
+  .header-inner li a
     padding: 20px 30px
 
-  .header-block__menu .menu
+  .header-inner .header-inner__menu
     clear: none
     float: right
     max-height: none
 
-  .header-block__menu
+  .header-inner .menu-icon
     display: none
-
-@media (max-width: 900px)
-  .header-grey
-    width: 400px
-@media (max-width: 650px)
-  .header-grey
-    width: 360px

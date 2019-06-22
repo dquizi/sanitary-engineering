@@ -15,8 +15,13 @@
 			display: flex
 			justify-content: space-between
 			align-items: center
+			background: #fff
+			height: 83px
+			margin-left: 16px
+			li
+				list-style: none
 			a
-				color: #000
+				line-height: 1
 				transition: 0.5s
 				&:hover
 					transition: 0.2s
@@ -25,28 +30,24 @@
 					&:after
 						width: 100%
 				&:after
-					content: ''
 					display: block
+					content: ""
 					height: 2px
 					width: 0%
 					background-color: $main-color
-					transition: width 0.3s ease-in-out
+					transition: width .3s ease-in-out
 		&__item
 			position: relative
 			text-align: center
-			padding: 27px
-			margin-left: 1px
-			margin-right: 1px
-			&:first-child
-				padding-left: 7px
-			&:last-child
-				padding-right: 0
+			padding-left: 29px
+			padding-right: 29px
 		&__call
 			display: flex
 			justify-content: flex-end
 			align-items: center
-			padding-left: 3px
+			padding-left: 10px
 			background-color: #f1f1f1
+			height: 83px
 		&__logo
 			display: flex
 			flex-shrink: 0
@@ -59,13 +60,18 @@
 			margin-left: 43px
 		&__phone
 			margin-left: 6px
+	&-inner
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
 @media (max-width: 1100px)
 	.header
 		&-block
 			&__item
 				padding-right: 10px
 				padding-left: 10px
-@media (max-width: 900px)
+@media (max-width: 903px)
 	.header
 		&-block
 			&__menu
@@ -73,12 +79,11 @@
 			&__button
 				margin-top: 0
 				margin-left: 10px
-		&-grey
-			width: 360px
+
 @media (max-width: 550px)
 	.header
 		&-grey
-			background-color: transparent
+			width: 320px
 		&-block
 			&__call
 				background-color: transparent
@@ -88,56 +93,73 @@
 				font-size: 14px
 @media (max-width: 450px)
 	.header
+		&-grey
+			display: none
 		&-block
 			&__call
 				img
 					display: none
 			&__phone
 				display: none
+
 /* Бургер-меню */
-.burger-section
-	height: 100vh
-	background-color: green
-	display: flex
-	justify-content: center
-	align-items: center
 .menu-btn
-	display: block
+	display: none
 	width: 50px
 	height: 50px
-	background-color: #fff
 	border-radius: 50%
 	position: relative
-.menu-btn
-	span
+	z-index: 5
+	&_active
+		display: none
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 4
+		// width: 300px
+		// height: 400px
+		border: 1px solid #000
+		background: #fff
+		transition: 0.2s
+	&__menu
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		align-items: center
+		background: #fff
+		list-style: none
+	&__item
+		margin: 15px
+	span, span:after, span:before
 		position: absolute
 		top: 50%
+		background-color: #222
 		margin-top: -1px
 		left: 50%
 		margin-left: -10px
 		width: 20px
 		height: 2px
-		background-color: #222
-		&:before
+		transition: 0.2s
+	span
+		&:after, &:before
 			content: ''
 			display: block
+			transition: 0.5s
+	span
+		&:before
+			transform: translateY(-5px)
+		&:after
+			transform: translateY(5px)
+		// &:after
+		// 	position: absolute
+		// 	top: 50%
+		// 	margin-top: -1px
+		// 	left: 50%
+		// 	margin-left: -10px
+		// 	width: 20px
+		// 	height: 2px
+		// 	transition: 0.2s
 
-// .menu-btn span:before, .menu-btn span:after
-// 	content: ''
-// 	display: block
-// 	height: 2px
-// 	color: #000
-// 	transition: 0.2s
-// .menu-btn span:before
-// 	transform: translateY(-5px)
-// .menu-btn span:after
-// 	transform: translateY(5px)
-// .menu-btn_active span
-// 	height: 0
-// .menu-btn_active span:before
-// 	transform: rotate(-35deg)
-// 	transform-origin: left bottom
-// .menu-btn_active span:after
-// 	transform: rotate(35deg)
-// 	transform-origin: left top
-
+@media (max-width: 903px)
+	.menu-btn
+		display: block
