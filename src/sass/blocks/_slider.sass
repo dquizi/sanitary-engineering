@@ -50,22 +50,25 @@
 	background-size: cover
 	background-repeat: no-repeat
 .owl-dot
-	width: 20px
-	height: 20px
-	margin-right: 11px
-	background: #fff
-	overflow: hidden
+	width: 20px !important
+	height: 20px !important
+	margin-right: 11px !important
+	background: #fff !important
+	overflow: hidden !important
+	z-index: 10 !important
+	span
+		display: none !important
 	&.active
-		background: $main-color
-		color: $main-color
+		background: $main-color !important
+		color: $main-color !important
 	&s
-		position: absolute
-		left: 50%
-		margin-left: -48px
-		bottom: 44px
-		display: flex
-		justify-content: center
-		color: #fff
+		position: absolute !important
+		left: 50% !important
+		margin-left: -48px !important
+		bottom: 44px !important
+		display: flex !important
+		justify-content: center !important
+		color: #fff !important
 @media (max-width: 768px)
 	.slider
 		&-text
@@ -97,7 +100,7 @@
 				line-height: 20px
 	.owl-dot
 		&:last-child
-			margin-right: 0
+			margin-right: 0 !important
 		&s
 			margin-left: -56px
 @media (max-width: 400px)

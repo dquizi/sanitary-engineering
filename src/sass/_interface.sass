@@ -57,7 +57,9 @@ input
 	outline: none
 	border: none
 	+bold
-	&:hover
-		cursor: pointer
-		background-color: darken($main-color, 10%)
-		transition: 0.2s
+@media (min-width: 993px)
+	.button
+		&:hover
+			cursor: pointer
+			background-color: darken($main-color, 10%)
+			transition: 0.2s

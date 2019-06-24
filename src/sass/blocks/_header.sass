@@ -20,22 +20,7 @@
 			margin-left: 16px
 			li
 				list-style: none
-			a
-				line-height: 1
-				transition: 0.5s
-				&:hover
-					transition: 0.2s
-					color: $main-color
-				&:hover
-					&:after
-						width: 100%
-				&:after
-					display: block
-					content: ""
-					height: 2px
-					width: 0%
-					background-color: $main-color
-					transition: width .3s ease-in-out
+
 		&__item
 			position: relative
 			text-align: center
@@ -71,6 +56,23 @@
 			&__item
 				padding-right: 10px
 				padding-left: 10px
+@media (min-width: 993px)
+	.header-block__menu a
+		line-height: 1
+		transition: 0.5s
+		&:hover
+			transition: 0.2s
+			color: $main-color
+		&:hover
+			&:after
+				width: 100%
+		&:after
+			display: block
+			content: ""
+			height: 2px
+			width: 0%
+			background-color: $main-color
+			transition: width .3s ease-in-out
 @media (max-width: 903px)
 	.header
 		&-block
@@ -116,8 +118,6 @@
 		top: 0
 		right: 0
 		z-index: 4
-		// width: 300px
-		// height: 400px
 		border: 1px solid #000
 		background: #fff
 		transition: 0.2s
@@ -125,6 +125,7 @@
 		display: flex
 		justify-content: space-between
 		flex-direction: column
+		padding-top: 40px
 		align-items: center
 		background: #fff
 		list-style: none

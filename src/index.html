@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ремонт сантехники</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
 	<nav class="header">
@@ -14,34 +15,30 @@
 				<div class="header-block__logo">
 					<img src="img/header/logo.png" alt="Логотип">
 				</div>
-					<div class="header-inner">
-						<a href="#" class="menu-btn"><span></span>
-							<div class="menu-btn_active">
-								<ul class="menu-btn__menu">
-									<li class="menu-btn__item"><a href="#service"><span class="header-block__text">Услуги</span></a></li>
-									<li class="menu-btn__item"><a href="#service"><span class="header-block__text">Цены</span></a></li>
-									<li class="menu-btn__item"><a href="#feedback"><span class="header-block__text">Отзывы</span></a></li>
-									<li class="menu-btn__item"><a href="#news"><span class="header-block__text">Новости</span></a></li>
-									<li class="menu-btn__item"><a href="#contacts"><span class="header-block__text">Контакты</span></a></li>
-								</ul>
-							</div>
-						</a>
-						<!-- <input class="menu-btn" type="checkbox" id="menu-btn" /> -->
-   			    <!-- <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> -->
-						<ul class="header-block__menu">
-							<li class="header-block__item"><a href="#service"><span class="header-block__text">Услуги</span></a></li>
-							<li class="header-block__item"><a href="#service"><span class="header-block__text">Цены</span></a></li>
-							<li class="header-block__item"><a href="#feedback"><span class="header-block__text">Отзывы</span></a></li>
-							<li class="header-block__item"><a href="#news"><span class="header-block__text">Новости</span></a></li>
-							<li class="header-block__item"><a href="#contacts"><span class="header-block__text">Контакты</span></a></li>
-						</ul>
-					</div>
-					<div class="header-block__call">
-						<img src="img/header/phone.png" alt="Телефон">
-						<a href="tel:+78633422221"><span class="header-block__phone phone">+7 (863) <span
-									class="_bold">342-22-21</span></span></a>
-						<button class="button header-block__button">Заказать звонок</button>
-					</div>
+				<div class="header-inner">
+					<a href="#" class="menu-btn"><span></span></a>
+						<div class="menu-btn_active">
+							<ul class="menu-btn__menu">
+								<li class="menu-btn__item"><a href="#service"><span class="header-block__text">Услуги</span></a></li>
+								<li class="menu-btn__item"><a href="#price"><span class="header-block__text">Цены</span></a></li>
+								<li class="menu-btn__item"><a href="#feedback"><span class="header-block__text">Отзывы</span></a></li>
+								<li class="menu-btn__item"><a href="#news"><span class="header-block__text">Новости</span></a></li>
+								<li class="menu-btn__item"><a href="#contacts"><span class="header-block__text">Контакты</span></a></li>
+							</ul>
+						</div>
+					<ul class="header-block__menu">
+						<li class="header-block__item"><a href="#service"><span class="header-block__text">Услуги</span></a></li>
+						<li class="header-block__item"><a href="#service"><span class="header-block__text">Цены</span></a></li>
+						<li class="header-block__item"><a href="#feedback"><span class="header-block__text">Отзывы</span></a></li>
+						<li class="header-block__item"><a href="#news"><span class="header-block__text">Новости</span></a></li>
+						<li class="header-block__item"><a href="#contacts"><span class="header-block__text">Контакты</span></a></li>
+					</ul>
+				</div>
+				<div class="header-block__call">
+					<img src="img/header/phone.png" alt="Телефон">
+					<a href="tel:+78633422221"><span class="header-block__phone phone">+7 (863) <span
+								class="_bold">342-22-21</span></span></a>
+					<button class="button header-block__button">Заказать звонок</button>
 				</div>
 			</div>
 			<!-- /.header-block -->
@@ -101,7 +98,7 @@
 			<div class="service-wrap">
 				<h2 class="title service-wrap__title" id="service">услуги</h2>
 				<div class="container">
-					<div class="service-block">
+					<div class="service-block" id="price">
 						<div class="service-block__item">
 							<img src="img/service/service-1.jpg" alt="service-1">
 							<button class="button service-block__button">Узнать цену</button>
@@ -247,7 +244,7 @@
 								<li class="why-list__item">
 									<span class="why-list__point">4</span>
 									<div class="why-list__line"><img src="img/why/line.svg" alt="line"></div>
-									<span class="why-list__description">Опыт,качество и скорость</span>
+									<span class="why-list__description">Опыт, качество и скорость</span>
 								</li>
 							</ul>
 						</div>
@@ -418,9 +415,7 @@
 								<h4 class="news-block__subtitle">ремонт раковины</h4>
 								<span class="news-block__subnumber"><span class="news-block__marker">29</span>11.2017</span>
 							</div>
-							<div class="news-block__description">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals
-							vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent
-							infrastructures. Quickly deploy best-of-breed niche markets without business</div>
+							<div class="news-block__description">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets without business</div>
 						</div>
 						<!-- /.news-block__item -->
 						<div class="news-block__item">
@@ -429,9 +424,7 @@
 								<h4 class="news-block__subtitle">починка слива</h4>
 								<span class="news-block__subnumber"><span class="news-block__marker">29</span>11.2017</span>
 							</div>
-							<div class="news-block__description">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals
-							vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent
-							infrastructures. Quickly deploy best-of-breed niche markets without business</div>
+							<div class="news-block__description">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets without business</div>
 						</div>
 						<!-- /.news-block__item -->
 						<div class="news-block__item">
@@ -440,9 +433,7 @@
 								<h4 class="news-block__subtitle">ремонт раковины</h4>
 								<span class="news-block__subnumber"><span class="news-block__marker">29</span>11.2017</span>
 							</div>
-							<div class="news-block__description">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals
-							vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent
-							infrastructures. Quickly deploy best-of-breed niche markets without business</div>
+							<div class="news-block__description">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets without business</div>
 						</div>
 						<!-- /.news-block__item -->
 					</div>
@@ -456,12 +447,12 @@
 		<!-- /.news -->
 		<section class="geo">
 			<div class="container">
-				<div class="form geo-form" id="geo-form">
+				<form action="#" class="form geo-form" id="geo-form">
 					<h3 class="geo-form__title">оставьте <span class="main-color">заявку</span></h3>
-					<input type="name" name="username" class="geo-form__name" placeholder="Введите Ваше имя">
-					<input type="phone" name="phone" class="geo-form__phone" id="phone" placeholder="Введите Ваш номер телефона">
+					<input type="text" name="username" required class="geo-form__name" placeholder="Введите Ваше имя">
+					<input type="tel" name="phone" required class="geo-form__phone" id="geo_phone" placeholder="Введите Ваш номер телефона">
 					<button class="button geo-form__button">заказать звонок</button>
-				</div>
+				</form>
 			</div>
 			<div class="geo-map">
 				<script></script>
@@ -480,20 +471,6 @@
 					<a href="#"><img src="img/footer/vk.png" alt="vk"></a>
 					<a href="#"><img src="img/footer/dno.png" alt="odnoklassniki"></a>
 				</div>
-				<!-- <div class="footer-block__social">
-					<div class="vk">
-						<a href="#"><img src="img/footer/1/instagram.png" alt="instagram"></a>
-					</div>
-					<div class="vk-2">
-						<a href="#" class="vk-2"><img src="img/footer/1/instagram-2.png" alt="instagram"></a>
-					</div>
-					<a href="#">
-						<img src="img/footer/1/vk.png" alt="vk">
-					</a>
-					<a href="#">
-						<img src="img/footer/1/odnoklassniki.png" alt="odnoklassniki">
-					</a>
-				</div> -->
 				<div class="footer-block__contacts">
 					<div class="footer-contacts__mail">
 						<img src="img/footer/mail.png" alt="mail"><a href="#"><span class="footer-contacts__text">infosanteh@gmail.com</span></a>
@@ -511,6 +488,27 @@
 	</footer>
 	<!-- /.footer -->
 
+	<div class="modal" id="modal">
+		<div class="modal-dialog">
+			<button class="modal-dialog__close close" id="modal_close">&times;</button>
+			<form action="#" class="form modal-dialog__form" id="modal-form">
+				<h3 class="geo-form__title">оставьте <span class="main-color">заявку</span></h3>
+				<input type="text" name="username" required class="geo-form__name" id="modal_username" placeholder="Введите Ваше имя">
+				<input type="tel" name="phone" required class="geo-form__phone" id="modal_phone" placeholder="Введите Ваш номер телефона">
+				<button class="button geo-form__button">заказать звонок</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="success" id="success">
+		<div class="success-dialog">
+			<button class="success-dialog__close close" id="close">&times;</button>
+			<h4 class="success-dialog__title">
+				Спасибо, мы вам перезвоним!
+			</h4>
+		</div>
+	</div>
+
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
@@ -518,7 +516,6 @@
 	<script src="js/main.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/map.js"></script>
-	<!-- <script src="js/map.js"></script> -->
 
 </body>
 </html>
