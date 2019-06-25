@@ -31,7 +31,7 @@ $(document).ready(function () {
 	})
 });
 
-var success = document.querySelector('#success');
+var success = document.querySelector('.success');
 var autoclose = function () {
 	$(success).removeClass('success_active');
 };
