@@ -21,16 +21,12 @@
 			bottom: 0
 			left: 0
 			display: none
-			transition: 0.2s
 		&__item
 			position: relative
 			margin-bottom: 17px
-			transition: 0.2s
 			&:hover
-				transition: 0.2s
 				.service-block__price
 					display: block
-					transition: 0.2s
 		&__text
 			position: absolute
 			top: 59px
@@ -74,6 +70,13 @@
 				text-transform: uppercase
 				color: #fff
 				background: #000
+// @media (min-width: 993px)
+// 	.service
+// 		&-block
+// 			&__item
+// 				&:hover
+// 					.service-block__price
+// 						display: block
 @media (max-width: 544px)
 	.service
 		&-wrap

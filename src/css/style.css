@@ -4496,26 +4496,15 @@ input {
   bottom: 0;
   left: 0;
   display: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .service-block__item {
   position: relative;
   margin-bottom: 17px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.service-block__item:hover {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .service-block__item:hover .service-block__price {
   display: block;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .service-block__text {

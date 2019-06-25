@@ -31,11 +31,12 @@ $(document).ready(function () {
 	})
 });
 
-var success = document.querySelector('.success');
+var success = $('.success');
+var success_close = $('#success_close');
 var autoclose = function () {
 	$(success).removeClass('success_active');
 };
-var close = document.querySelector('#close');
+
 var modal = document.querySelector('#modal');
 var modal_close = document.querySelector('#modal_close');
 var modal_username = document.querySelector('#modal_username');
@@ -48,6 +49,10 @@ $('.header-block__button').on('click', function () {
 modal_close.addEventListener('click', function () {
 	modal.classList.remove('modal_active')
 })
+
+success_close.on('click', function () {
+	modal.classList.remove('modal_active')
+});
 
 $('#geo-form').validate({
 	rules: {
@@ -63,8 +68,8 @@ $('#geo-form').validate({
 	errorClass: "invalid",
 	errorElement: "div",
 	submitHandler: function (form) {
-			$('#success').addClass('success_active');
-			setTimeout(autoclose, 4000)
+		success.addClass('success_active');
+		setTimeout(autoclose, 4000)
 	},
 	messages: {
 		username: {
@@ -88,7 +93,7 @@ $('#modal-form').validate({
 	errorClass: "invalid",
 	errorElement: "div",
 	submitHandler: function (form) {
-		$('#success').addClass('success_active');
+		success.addClass('success_active');
 		setTimeout(autoclose, 4000)
 	},
 	messages: {
@@ -99,15 +104,8 @@ $('#modal-form').validate({
 	}
 })
 
- $(document).ready(function () {
- 	$(modal_username).click(function () {
- 		if ($(this).hasClass("invalid"))
- 			$("modal").submit();
- 	})
- })
-
-close.addEventListener('click', function() {
-	success.classList.remove('success_active')
+success_close.on('click', function() {
+	success.removeClass('success_active');
 })
 
 jQuery.extend(jQuery.validator.messages, {
@@ -117,6 +115,3 @@ jQuery.extend(jQuery.validator.messages, {
 /* Маски телефона */
 $('#geo_phone').mask('8 (999) 999-99-99')
 $('#modal_phone').mask('8 (999) 999-99-99')
-
-/* Инициализируем библиотек WOW */
-new WOW().init();
