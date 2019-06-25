@@ -117,3 +117,6 @@ jQuery.extend(jQuery.validator.messages, {
 /* Маски телефона */
 $('#geo_phone').mask('8 (999) 999-99-99')
 $('#modal_phone').mask('8 (999) 999-99-99')
+
+/* Инициализируем библиотек WOW */
+new WOW().init();
