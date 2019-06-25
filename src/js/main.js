@@ -5,7 +5,7 @@ $('.menu-btn').on('click', function(e) {
 	$('.menu-btn_active').fadeToggle('menu-btn_active');
 });
 
-/* Настройки Owl для 1 слайдера*/
+/* Настройки Owl для 1 слайдера */
 
 $(document).ready(function () {
 	$('.slider-block').owlCarousel({
@@ -19,7 +19,7 @@ $(document).ready(function () {
 	})
 });
 
-/* Настройки Owl для 2 слайдера*/
+/* Настройки Owl для 2 слайдера */
 
 $(document).ready(function () {
 	$('.feedback-sliders').owlCarousel({
